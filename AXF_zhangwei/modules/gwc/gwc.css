@@ -1,0 +1,204 @@
+.gwc header{
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+	height: 0.5908rem;
+	line-height: 0.5908rem;
+	background: #f9fafd;
+	text-align: center;
+	font-size: 0.1811rem;
+	color: #333;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.receive{
+	height: 1.08rem;
+	margin: 0.5908rem 0 0.13rem;
+	background-color: #fff;
+	background-image: url(../../images/a49.png), url(../../images/a49.png);
+	background-size: auto 0.0388rem;
+	background-position: left -0.011rem, left bottom;
+	background-repeat: repeat-x, repeat-x;
+}
+.receive p{
+	height: 0.36rem;
+	line-height: 0.36rem;
+	font-size: 0.181125rem;
+	padding-left: 0.194rem;
+	overflow: hidden;
+}
+.receive p span{
+	display: inline-block;
+	width: 56%;
+	margin-left: 0.22rem;
+	font-size: 0.181125rem;
+}
+.receive-xiugai{
+	width: 0.7rem !important;
+	margin-left: 0 !important;
+	float: right;
+	background: url(../../images/a50.png) right center no-repeat;
+	background-size: auto 0.13rem;
+
+}
+.cart-groups-wraper{
+	background: #fff;
+	padding-top: 0.065rem;
+	margin-bottom: 0.775rem;
+}
+.theme-grayfont{
+	height: 0.3881rem;
+	line-height: 0.3rem;
+	padding-left: 0.181125rem;
+	color: #999;
+	font-size: 0.15525rem;
+	position: relative;
+}
+.theme-grayfont:before{
+	content: '';
+    display: inline-block;
+    height: 0.15516rem;
+    width: 0.05172rem;
+    border-radius: 0.02rem;
+    margin-right: 0.03rem;
+    background: #ffd600;
+    vertical-align: -0.01rem;
+}
+.theme-grayfont>span{
+	position: absolute;
+	top: 0,065rem;
+	right: 0.18rem;
+	width: 0.9256rem;
+	height: 0.3305rem;
+	color: #e64f1a;
+	border: 1px solid #ff3800;
+	border-radius: 0.15525rem;
+	text-align: center;
+}
+.theme-protext{
+	height: 0.25rem;
+	line-height: 0.25rem;
+	color: #999;
+	font-size: 0.1423rem;
+	padding-left: 0.181125rem;
+}
+.theme-spline,.theme-spline1{
+	height: 0.65rem;
+	line-height: 0.65rem;
+	border-top: 1px solid #e0e0e0;
+	background: url(../../images/a50.png) right center no-repeat;
+	background-size: auto 0.13rem;
+	padding-left: 0.181125rem;
+	font-size: 0.181125rem;
+}
+.theme-spline span:first-child{
+	color: #e64f1a;
+	margin-left: 0.1rem;
+}
+.theme-spline span:last-child{
+	float: right;
+	margin-right: 0.33rem;
+}
+.theme-spline1{
+	height: 0.66rem;
+	line-height: 0.66rem;
+	border-bottom: 1px solid #e0e0e0;
+	background: #fff;
+}
+.theme-spline1 input{
+	width: 2.8405rem;
+	height: 0.4339rem;
+	border: 1px solid #cecece;
+	border-radius: 0.065rem;
+	font: 0.181125rem Arial;
+	text-indent: 0.065rem;
+	margin-left: 0.1rem;
+}
+.group-list{
+	background: #fff;
+}
+.group-list ul li{
+	overflow: hidden;
+	height: 1.03rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.group-list ul li>div{
+	float: left;
+}
+.group-list-xz{
+	width: 0.64rem;
+	height: 100%;
+	background: url(../../images/a51.png) center center no-repeat;
+	background-size: 0.233rem 0.233rem;
+}
+.group-list-img{
+	width: 0.64rem;
+	height: 100%;
+	background: url(../../images/a59.jpg) center no-repeat;
+	background-size: contain;
+}
+.group-list-name,.group-list-price{
+	width: 2.86rem;
+	height: 0.51rem;
+	line-height: 0.51rem;
+	font-size: 0.181125rem;
+	padding-left: 0.181125rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.group-list-nr{
+	position: relative;
+}
+.gwc .shop1-jiajian{
+	width: 1.2938rem;
+	height: 0.6469rem;
+	line-height: 0.6469rem;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	z-index: 66;
+}
+.gwc .shop1-jianqu,.gwc .shop1-jiaru{
+	width: 0.3563rem;
+	height: 0.3563rem;
+	border-radius: 50%;
+	border: 1px solid #e0e0e0;
+	margin: auto;
+}
+.gwc .shop1-jiaru{
+	background: #ff4300 url(../../images/a23.png) no-repeat right center;
+	background-size: 200% 100%;
+}
+.gwc .shop1-jianqu{
+	background: #ff4300 url(../../images/a23.png) no-repeat left center;
+	background-size: 200% 100%;
+}
+.group-footer{
+	height: 0.65rem;
+	line-height: 0.65rem;
+	overflow: hidden;
+	padding-left: 0.181125rem;
+}
+.group-btn{
+	float: right;
+	width: 1.3rem;
+	height: 0.65rem;
+	background: #ffd600;
+	text-align: center;
+}
+.group-all{
+	display: inline-block;
+	width: 0.9703rem;
+	padding-left: 0.323rem;
+	background: url(../../images/a51.png) left center no-repeat;
+	background-size: 0.233rem 0.233rem;
+}
+.theme-redfont{
+	color: #e64f1a;
+	font-size: 0.181125rem;
+	margin-left: 0.1rem;
+}

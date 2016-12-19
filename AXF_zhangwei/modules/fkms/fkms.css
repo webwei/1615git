@@ -1,0 +1,323 @@
+body .fkms{
+	font: 0.181125rem/1.5 "Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun !important;
+}
+.header2{
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+	height: 0.5922rem;
+	line-height: 0.5922rem;
+	background: #f9fafd;
+	text-align: center;
+	font-size: 0.1811rem;
+	color: #333;
+	font-weight: bold;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.header2 a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.66rem;
+	height: 100%;
+}
+.header-icon{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/a52.png) left center no-repeat;
+	background-size: auto 0.323rem;
+	margin-left: 0.08rem; 
+	vertical-align: middle;
+}
+.header-icon1{
+	position: absolute;
+	top: 0;
+	right: 0.077rem;
+	width: 0.776rem;
+	height: 0.57rem;
+	background: url(../../images/a57.png) 100% 50% no-repeat;
+	background-size: auto 0.323rem;
+}
+.fkms .main{
+	position: absolute;
+	top: 0.5922rem;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.main-header{
+	height: 1.8091rem;
+	background: #fdd000 url(../../images/a64.jpg) center top no-repeat;
+	background-size: contain;
+}
+.main-seckill{
+	height: 0.91rem;
+	overflow: hidden;
+}
+.main-seckill>div{
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	background: #272c2a;
+	color: #fff;
+	border-right: 1px solid #fff;
+	padding-top: 0.065rem;
+}
+.main-seckill>div span{
+	display: inline-block;
+	width: 0.16rem;
+	height: 0.16rem;
+	background: url(../../images/a58.png) right center no-repeat;
+	background-size: cover;
+}
+.main-seckill>div p:first-child{
+	font-size: 0.194rem;
+}
+.main-seckill>div p:nth-child(2){
+	font-size: 0.17rem;
+}
+.main-seckill-1{
+	background: #fdd000 !important;
+	color: #272c2a !important;
+}
+.main-seckill-1 span{
+	background-position: left center !important;
+}
+.seckill-tip-bar{
+	height: 0.41rem;
+	border-top: 1px solid #fff;
+	background: #f2f2f2;
+	-webkit-box-shadow: 0 2px 1px #d9d9d9 !important;
+	position: relative;
+}
+.seckill-tip-left{
+	width: 1.28rem;
+	height: 0.41rem;
+	background: #fdd000;
+	padding-top: 0.01rem;
+	position: relative;
+}
+.seckill-tip-left>p{
+	text-indent: 0.2rem;
+	height: 0.18rem;
+	line-height: 0.18rem;
+}
+.seckill-tip-left-text{
+	font-size: 0.13rem;
+}
+.seckill-tip-left-time{
+	font-size: 0.16rem;
+}
+.seckill-tip-left:after{
+	content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -0.08rem;
+    border-top: 0.2rem solid transparent;
+    border-left: 0.1rem solid #fdd000;
+    border-bottom: 0.2rem solid transparent;
+}
+.seckill-tip-right{
+	position: absolute;
+	right: 0.1rem;
+	top: 50%;
+	padding: 0.07rem 0.15rem;
+	font-size: 0.14rem;
+	margin-top: -0.14rem;
+	background: #272c2a;
+	color: #fff;
+	-webkit-border-radius: 0.2rem;
+	line-height: 1;
+}
+.seckill-section-wrap{
+	width: 100%;
+	height: 1.94rem;
+	overflow: hidden;
+	margin-bottom: 0.05rem;
+}
+.seckill-img-wrap{
+	float: left;
+	background: url(../../images/a65.jpg) center center no-repeat;
+	background-size: 1.94rem 1.94rem;
+	width: 45%;
+	height: 100%;
+	border-right: 1px solid #eee;
+}
+.seckill-buy{
+	float: right;
+	background: #fff;
+	width: 55%;
+	height: 100%;
+	padding: 4% 0 0 5%;
+	position: relative;
+}
+.seckill-name{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    height: 0.32rem;
+    line-height: 0.32rem;
+}
+.seckil-speci{
+	height: 0.32rem;
+	line-height: 0.32rem;
+	color: #333;
+}
+.seckil-price{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #ff602c;
+}
+.seckil-price span:first-child{
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+.seckil-price span:last-child{
+	color: #979697;
+	font-size: 0.168rem;
+}
+.product-buy{
+	position: absolute;
+	left: 7%;
+	bottom: 10%;
+	width: 70%;
+	height: 0.388rem;
+	line-height: 0.388rem;
+	background: #ff602c;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.2rem;
+}
+.seckill-hot-title{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	background: url(../../images/a59.png) center bottom no-repeat;
+	background-size: contain;
+}
+.seckill-hot-title span{
+	padding: 0 0.03rem;
+	background: #fdd000;
+}
+.seckill-section2{
+	margin: 0.1rem;
+	overflow: hidden;
+}
+.mod-seckill-item{
+	width: 49.5%;
+	padding-top: 49%;
+	background: #fff;
+	background-size: contain;
+	position: relative;
+	margin-bottom: 0.1rem;
+	border: 1px solid #e7e7e7;
+}
+.mod-seckill-item:nth-child(odd){
+	float: left;
+}
+.mod-seckill-item:nth-child(even){
+	float: right;
+}
+.mod-seckill-productimg{
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+    padding-bottom: 100%;
+    border-bottom: 1px dashed #e7e7e7;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../images/a66.jpg);
+}
+.product-pm{
+	position: absolute;
+	top: 0.08rem;
+	left: -0.33rem;
+	color: #fff;
+	font-size: 0.1rem;
+	text-align: center;
+	height: 0.14rem;
+	line-height: 0.14rem;
+	width: 1rem;
+	background: #e60027;
+	-webkit-transform: rotate(-45deg);
+
+}
+.mod-seckill-item>p{
+	font-size: 0.15rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	padding-left: 0.05rem;
+	color: #444;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mod-seckill-item .mod-seckill-item-p3{
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #fc1400;
+}
+.mod-seckill-item-p3 span{
+	color: #929292;
+	text-decoration: line-through;
+}
+.mod-seckill-btn{
+	position: absolute;
+	bottom: 0.05rem;
+	right: 0.05rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 0.2rem;
+	color: #fc1400;
+	border: 1px solid #999;
+	font-size: 0.2rem;
+	text-align: center;
+}
+.rule-list{
+	width: 75%;
+	margin: 0 auto;
+	padding: 0.2rem 0 0.4rem 0.2rem;
+	color: #595757;
+	font-size: 0.13rem;
+}
+.rule-list li{
+	list-style: decimal outside;
+
+}
+.cart-btn{
+	position: absolute;
+	right: 0.077rem;
+	bottom: 0.09rem;
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	z-index: 3;
+	background: #ffd600 url(../../images/a60.png) center center no-repeat;
+	background-size: 80%;
+}
+.cart-btn-num{
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 50%;
+	background: #f40;
+	color: #fff;
+	text-align: center;
+	font-size: 0.13rem;
+	width: 0.23rem;
+	height: 0.23rem;
+	line-height: 0.23rem;
+}

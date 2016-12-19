@@ -1,0 +1,150 @@
+<!-- 模板 -->
+<!-- 轮播图模板 -->
+<script type="text/html" id = "firstTmp">
+  <!-- 模板中所有js语法使用<%%>包裹 而取值使用<%=变量名%> -->
+  <!-- 头部 -->
+  <header class="header1">
+    <div>北京市政府 234<span class="sjx">&#xe69d;</span></div>
+    <a href="#sousuo"><span>搜&nbsp;索&nbsp;</span></a>
+  </header>
+  <div class="home-main">
+  <!-- 广告 -->
+  <div class="banner">
+		<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	    	<%for(var i in data.act_info[0].act_rows){%>
+	      <div class="swiper-slide">
+	      	<img src=<%=data.act_info[0].act_rows[i].activity.img%>>
+	      </div>
+	      <%}%>
+	    </div>
+	    <div class="swiper-pagination"></div>
+	  </div>
+  </div>
+  <!-- 主体 -->
+  <div class="main">
+    <div class="main-icon">
+    	<%for(var q in data.act_info[1].act_rows){%>
+      <a href="#fkms">
+        <div style="background-image: url(<%=data.act_info[1].act_rows[q].activity.img%>);"></div>
+        <p><%=data.act_info[1].act_rows[q].activity.name%></p>
+      </a>
+			<%}%>
+    </div>
+    <div class="main-brand">
+    	<%for(var w in data.act_info[3].act_rows){%>
+      <a href="#" style="background-image: url(<%=data.act_info[3].act_rows[w].activity.img%>);"></a>
+			<%}%>
+    </div>
+    <div class="main-home">
+      <div class="home-sub-chead" style="background-image: url(<%=data.act_info[4].act_rows[0].act_rows[0].chead_detail.img%>);"></div>
+      <div class="home-sub-cactivity">
+      	<%for(var e in data.act_info[4].act_rows[1].act_rows){%>
+        <a href="#">
+          <div style="background-image: url(<%=data.act_info[4].act_rows[1].act_rows[e].cactivity_detail.img%>);"></div>
+        </a>
+        <%}%>
+      </div>
+      <div class="home-sub-cicons">
+      	<%for(var r in data.act_info[4].act_rows[2].act_rows){%>
+        <a href="#" style="background-image: url(<%=data.act_info[4].act_rows[2].act_rows[r].cicons_detail.img%>);"><%=data.act_info[4].act_rows[2].act_rows[r].cicons_detail.name%></a>
+        <%}%>
+      </div>
+      <div class="home-sub-cscene">
+      	<%for(var t in data.act_info[4].act_rows[3].act_rows){%>
+        <a href="#" style="background-image: url(<%=data.act_info[4].act_rows[3].act_rows[t].activity.img%>);"></a>
+  			<%}%>
+      </div>
+    </div>
+    <%for(var y in data.act_info[5].act_rows){%>
+    <div class="acts-category-item acts-category-item1">
+      <div class="acts-category-item-header">
+        <span class="acts-category-item-header-span1"><%=data.act_info[5].act_rows[y].category_detail.name%></span>
+        <a href="#">更多</a>
+      </div>
+      <div class="acts-category-item-banner " style="background-image: url(<%=data.act_info[5].act_rows[y].activity.img%>);"></div>
+      <div class="acts-category-item-goodsList">
+        <%for(var u in data.act_info[5].act_rows[y].category_detail.goods){%>
+        <div class="shop">
+          <a href="#"><div class="shop-img img1" style="background-image: url(<%=data.act_info[5].act_rows[y].category_detail.goods[u].img%>);"></div></a>
+          <div class="shop-h shop-name"><%=data.act_info[5].act_rows[y].category_detail.goods[u].name%></div>
+          <div class="shop-h shop-jingxuan"><span>精选</span></div>
+          <div class="shop-h shop-size"><%=data.act_info[5].act_rows[y].category_detail.goods[u].specifics%></div>
+          <div class="shop-h shop-price">￥<%=data.act_info[5].act_rows[y].category_detail.goods[u].price%><span>￥<%=data.act_info[5].act_rows[y].category_detail.goods[u].market_price%></span></div>
+          <span class="shop-jiaru"></span>
+        </div>
+        <%}%>
+      </div>
+    </div>
+    <%}%>
+  </div>
+  </div>
+
+</script>
+
+<script type="text/html" id="twoTmp">
+  <div class="main-sscs-left">
+  <ul>
+    <%for(var i in data.categories){%>
+    <li data-categoryid="<%=data.categories[i].id%>" style="background-image: url(<%=data.categories[i].flag%>);"><%=data.categories[i].name%></li>
+    <%}%>
+  </ul>
+  </div>
+  <div class="main-sscs-right-top">
+    <ul>
+      <li>全部分类</li>
+      <li class="main-sscs-right-top2">综合排序</li>
+    </ul>
+  </div>
+  <div class="main-sscs-right">
+    <div class="main-sscs-right-bottom">
+      <ul>
+        <li class="li-first"></li>
+        <div data-li='104749'>
+        <%for(var j in data.products['104749']){%>
+        <li>
+          <div class="shop1">
+            <div class="shop1-img img1" style="background-image: url(<%=data.products['104749'][j].img%>);"></div>
+            <div class="shop1-right">
+              <div class="shop1-h shop1-name"><%=data.products['104749'][j].name%></div>
+              <div class="shop1-h shop1-jingxuan"><span>精选</span><span class="shop1-jingxuan-span2"><%=data.products['104749'][j].pm_desc%></span></div>
+              <div class="shop1-h shop1-size"><%=data.products['104749'][j].specifics%></div>
+              <div class="shop1-h shop1-price">￥<%=data.products['104749'][j].price%><span>￥<%=data.products['104749'][j].market_price%></span></div>
+              <div class="shop1-jiajian">
+                <span class="shop1-jianqu"></span>
+                <div class="shop1-num"></div>
+                <span class="shop1-jiaru"></span>
+              </div>
+            </div>
+          </div>  
+        </li>
+        <%}%>
+        </div>
+      </ul>
+    </div>
+  </div>
+</script>
+
+<script type="text/html" id="threeTmp">
+    <div data-li=<%=data[0].cid%>>
+    <%for(var j in data){%>
+    <li>
+      <div class="shop1">
+        <div class="shop1-img img1" style="background-image: url(<%=data[j].img%>);"></div>
+        <div class="shop1-right">
+          <div class="shop1-h shop1-name"><%=data[j].name%></div>
+          <div class="shop1-h shop1-jingxuan"><span>精选</span><span class="shop1-jingxuan-span2"><%=data[j].pm_desc%></span></div>
+          <div class="shop1-h shop1-size"><%=data[j].specifics%></div>
+          <div class="shop1-h shop1-price">￥<%=data[j].price%><span>￥<%=data[j].market_price%></span></div>
+          <div class="shop1-jiajian">
+            <span class="shop1-jianqu"></span>
+            <div class="shop1-num"></div>
+            <span class="shop1-jiaru"></span>
+          </div>
+        </div>
+      </div>  
+    </li>
+    <%}%>
+    </div>
+</script>
+

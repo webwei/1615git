@@ -1,0 +1,69 @@
+.header2{
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+	height: 0.5908rem;
+	line-height: 0.5908rem;
+	background: #f9fafd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	overflow: hidden;
+}
+.sousuo .header2>a{
+	float: left;
+	width: 0.66rem;
+	height: 100%;
+}
+.sousuo .header-icon{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: url(../../images/a52.png) left center no-repeat;
+	background-size: auto 0.323rem;
+	margin-left: 0.08rem; 
+	vertical-align: middle;
+}
+.header2>form{
+	float: left;
+	background: #f9fafd;
+}
+.header-text{
+	width: 2.5875rem;
+	height: 0.3563rem;
+	line-height: 0.3563rem;
+	vertical-align: middle;
+	border: 1px solid #e0e0e0;
+	border-radius: 0.03rem;
+	outline: none;
+	background: transparent url(../../images/a53.png) 0.078rem center no-repeat;
+	background-size: 0.168rem;
+	text-indent: 0.31rem;
+	font-size: 0.181125rem;
+}
+.header-ss{
+	font-size: 0.181125rem;
+	margin-left: 0.15rem;
+	color: #777;
+}
+.sousuo .main{
+	margin-top: 0.5908rem;
+	padding: 0.3234rem 0 0.388rem 0.194rem;
+
+}
+.main-sug dl{
+	overflow: hidden;
+}
+.main-sug dl dt{
+	color: #888;
+	line-height: 0.232875rem;
+}
+.main-sug dl dd{
+	float: left;
+	border: 1px solid #e4e4e4;
+	border-radius: 0.35rem;
+	background: #fff;
+	color: #000;
+	margin: 0.077rem 0.13rem 0.1rem 0;
+	padding: 0.1rem 0.2rem;
+}

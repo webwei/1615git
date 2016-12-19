@@ -1,0 +1,86 @@
+/*页脚*/
+.footer{
+	width: 100%;
+	height: 0.645rem;
+	background-color: rgba(246,246,246,0.95);
+	display: flex;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+}
+.footer a{
+	flex: 1;
+}
+.footer-xt{
+	padding-top: 0.4rem;
+	font-size: 0.15rem;
+	line-height: 1.6;
+	color: rgb(119,119,119);
+	text-align: center;
+	background: no-repeat center 0.078rem;
+	background-size: auto 0.26rem;
+}
+@keyframes fbhbj{
+	0% {
+    	background-size: auto 0.0776rem;
+	}
+	20% {
+	    background-size: auto 0.284625rem;
+	}
+	40% {
+	    background-size: auto 0.232875rem;
+	}
+	60% {
+	    background-size: auto 0.2665rem;
+	}
+	80% {
+	    background-size: auto 0.251rem;
+	}
+	100% {
+	    background-size: auto 0.258575rem;
+	}
+}
+.footer-bhbj{
+	animation: fbhbj 0.75s;
+}
+.footer a:first-child .footer-bhbj{
+	background-image: url(../images/a24.png);
+}
+.footer a:nth-child(2) .footer-bhbj{
+	background-image: url(../images/a29.png);
+}
+.footer a:nth-child(3) .footer-bhbj{
+	background-image: url(../images/a30.png);
+}
+.footer a:last-child .footer-bhbj{
+	background-image: url(../images/a31.png);
+}
+.home{
+	background-image: url(../images/a28.png);
+}
+.menu{
+	background-image: url(../images/a25.png);
+}
+.cart{
+	background-image: url(../images/a26.png);
+	position: relative;
+}
+.cart span{
+	position: absolute;
+	left: 50%;
+	margin-left: 0.13rem;
+	top: 0.06rem;
+	width: 0.23rem;
+	height: 0.23rem;
+	line-height: 0.23rem;
+	text-align: center;
+	background: #f40;
+	color: #fff;
+	font-size: 0.13rem;
+	border-radius: 50%;
+	display: none;
+}
+.mine{
+	background-image: url(../images/a27.png);
+}
