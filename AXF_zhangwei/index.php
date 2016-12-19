@@ -1,3 +1,9 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wxc83ecab55cd973c3", "b642b6564c9252faef7bb80a7e158d8f");
+$signPackage = $jssdk->GetSignPackage();
+?>
 <!DOCTYPE html>
 <!-- 文档类型声明 -->
 <!-- HTML文档，根元素 -->
@@ -13,6 +19,7 @@
   <!-- 文档标题 -->
   <title></title>
   <!-- 根据 HTML5 规范，在引入 CSS 和 JavaScript 文件时一般不需要指定 type 属性，因为 text/css 和 text/javascript 分别是它们的默认值。 -->
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
   <!-- CSS引入 -->
   <link rel="stylesheet" href="css/index.css">
   <!-- 重置样式 -->
@@ -56,5 +63,15 @@
     window.onresize =function(){
       document.documentElement.style.fontSize = innerWidth/4.14 + "px";
     }
+  </script>
+  <script type="text/javascript">
+    wx.config({
+    debug: true,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+     jsApiList: []
+  });
   </script>
 </html>
