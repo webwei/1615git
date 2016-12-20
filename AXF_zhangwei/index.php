@@ -109,7 +109,7 @@ $signPackage = $jssdk->GetSignPackage();
   });
   wx.ready(function(){
     wx.getLocation({
-      type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
+      type: 'gcj02', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
       success: function (res) {
           var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
           var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
@@ -117,7 +117,6 @@ $signPackage = $jssdk->GetSignPackage();
           var accuracy = res.accuracy; // 位置精度
       }
     });
-    console.log(latitude);
     wx.openLocation({
       latitude: 0, // 纬度，浮点数，范围为90 ~ -90
       longitude: 0, // 经度，浮点数，范围为180 ~ -180。
@@ -126,16 +125,16 @@ $signPackage = $jssdk->GetSignPackage();
       scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
       infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
     });
-    wx.chooseWXPay({
-      timestamp: 0, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
-      nonceStr: '', // 支付签名随机串，不长于 32 位
-      package: '', // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
-      signType: '', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
-      paySign: '', // 支付签名
-      success: function (res) {
-          // 支付成功后的回调函数
-      }
-    });
+    // wx.chooseWXPay({
+    //   timestamp: 0, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+    //   nonceStr: '', // 支付签名随机串，不长于 32 位
+    //   package: '', // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+    //   signType: '', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+    //   paySign: '', // 支付签名
+    //   success: function (res) {
+    //       // 支付成功后的回调函数
+    //   }
+    // });
   });
 
 
