@@ -118,12 +118,12 @@ $signPackage = $jssdk->GetSignPackage();
           var accuracy = res.accuracy; // 位置精度
           alert('经度：' + longitude);
           alert('纬度：' + latitude);
-      };
+      }
+    });
   };
   dianji();
 
 
 
-});
   </script>
 </html>
